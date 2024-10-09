@@ -1,11 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Own site</title>
+    <title>Kushang Shah | Full Stack Developer | Crafting Code & Solutions</title>
+    <link rel="stylesheet" href="Assets/Style/index.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
+
 <body>
-    Kushang Shah
+    <div class="core-wrapper">
+        <div class="background">
+            <canvas id="particles-canvas"></canvas>
+        </div>
+        <div class="foreground">
+            <div class="introduction-container">
+                <div class="introduction-data">
+                    <h1>Hello, I'm <span class="introduction-name">Kushang</span>.</h1>
+                    <p class="introduction-titles">I'm a <span class="typed-text"></span><span
+                            class="cursor blink">&nbsp;</span></p>
+                    <section class="buttons">
+                        <div class="top-button-container">
+                            <a class="shining-border-button" href="#about">
+                                <div style="text-transform: uppercase;">Get To Know Me</div>
+                                <div class="scroll-animation"></div>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="nav" id="navBar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li style="margin-right: 60px;"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <div id="about"></div>
+                <div class="spacer-32"></div>
+                <div class="about">
+                    <div class="section-title underline-side">
+                        About Me
+                    </div>
+                    <div class="about-container">
+                        <div class="about-data-left">
+                            <div class="about-info-container">
+                                <div class="about-info-image">
+                                    <img class="about-info-image-content"
+                                        src="https://avatars.githubusercontent.com/u/52349778?v=4" />
+                                </div>
+                                <div class="about-info-description">
+                                    <div>
+                                        Experienced problem solver with expertise in
+                                        web, native, and Android development with strong <b>Googling</b> and <b>AI
+                                            querying (or "ChatGPTing")</b> skills to find information and solve
+                                        problems.
+                                    </div>
+                                    <div style="margin-top: 12px;">
+                                        I am a <b>Passionate Software Developer.</b>
+                                    </div>
+                                    <div style="margin-top: 12px;">
+                                        You can count on me to find solutions — if I know them, I'll provide them right
+                                        away; if I don't, I certainly know how to find them.
+                                    </div>
+                                    <div>
+                                        <a href="Assets/Resume/KushangShah.pdf" style="text-decoration: none;">
+                                        <div class="download-button">
+                                            <p>My Resume</p>
+                                            <i class="fa fa-download"></i>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-data-right">
+                            <div class="skills-container-mobile">
+                                <div class="gradient-border icon-box-mobile">
+                                    <div>
+                                        <img class="skills-icon-image" src="Assets/Images/Skills/java.svg" alt="" />
+                                    </div>
+                                    <div class="skills-icon-text">Java</div>
+                                </div>
+                                <div class="gradient-border icon-box-mobile">
+                                    <div>
+                                        <img class="skills-icon-image" src="Assets/Images/Skills/spring.svg" alt="" />
+                                    </div>
+                                    <div class="skills-icon-text">Spring</div>
+                                </div>
+                            </div>
+                            <div class="skills-container-mobile">
+                                <div class="gradient-border icon-box-mobile">
+                                    <div>
+                                        <img class="skills-icon-image" src="Assets/Images/Skills/c.svg" alt="" />
+                                    </div>
+                                    <div class="skills-icon-text">C++ Dev</div>
+                                </div>
+                                <div class="gradient-border icon-box-mobile">
+                                    <div>
+                                        <img class="skills-icon-image" src="Assets/Images/Skills/cmake.svg" alt="" />
+                                    </div>
+                                    <div class="skills-icon-text">Cmake</div>
+                                </div>
+                            </div>
+                            <div class="skills-container-mobile">
+                                <div class="gradient-border icon-box-mobile">
+                                    <div>
+                                        <img class="skills-icon-image" src="Assets/Images/Skills/javascript.svg" alt="" />
+                                    </div>
+                                    <div class="skills-icon-text">JavaScript</div>
+                                </div>
+                                <div class="gradient-border icon-box-mobile">
+                                    <div>
+                                        <img class="skills-icon-image" src="Assets/Images/Skills/nodejs-original.svg" alt="" />
+                                    </div>
+                                    <div class="skills-icon-text">NodeJS</div>
+                                </div>
+                            </div>
+                            <div class="skills-container-mobile">
+                                <div class="gradient-border icon-box-mobile">
+                                    <div>
+                                        <img class="skills-icon-image" src="Assets/Images/Skills/react.svg" alt="" />
+                                    </div>
+                                    <div class="skills-icon-text">React</div>
+                                </div>
+                                <div class="gradient-border icon-box-mobile">
+                                    <div>
+                                        <img class="skills-icon-image" src="Assets/Images/Skills/android-os.svg" alt="" />
+                                    </div>
+                                    <div class="skills-icon-text">Android</div>
+                                </div>
+                            </div>
+                            <div class="skills-container-mobile">
+                                <div class="gradient-border icon-box-mobile">
+                                    <div>
+                                        <img class="skills-icon-image" src="Assets/Images/Skills/github.svg" alt="" />
+                                    </div>
+                                    <div class="skills-icon-text">Github</div>
+                                </div>
+                                <div class="gradient-border icon-box-mobile">
+                                    <div>
+                                        <img class="skills-icon-image" src="Assets/Images/Skills/mysql-original-wordmark.svg" alt="" />
+                                    </div>
+                                    <div class="skills-icon-text">MySQL</div>
+                                </div>
+                            </div>
+                            <div class="skills-container">
+                                <div class="column column-1">
+                                    <div class="icon-box gradient-border">
+                                        <div>
+                                            <img class="skills-icon-image" src="Assets/Images/Skills/c.svg" alt="" />
+                                        </div>
+                                        <div class="skills-icon-text">C++ Dev</div>
+                                    </div>
+                                    <div class="icon-box gradient-border">
+                                        <div>
+                                            <img class="skills-icon-image" src="Assets/Images/Skills/cmake.svg"
+                                                alt="" />
+                                        </div>
+                                        <div class="skills-icon-text">Cmake</div>
+                                    </div>
+                                    <div class="icon-box gradient-border">
+                                        <div>
+                                            <img class="skills-icon-image" src="Assets/Images/Skills/javascript.svg"
+                                                alt="" />
+                                        </div>
+                                        <div class="skills-icon-text">JavaScript</div>
+                                    </div>
+                                </div>
+                                <div class="column column-2">
+                                    <div class="icon-box gradient-border">
+                                        <div>
+                                            <img class="skills-icon-image" src="Assets/Images/Skills/java.svg" alt="" />
+                                        </div>
+                                        <div class="skills-icon-text">Java</div>
+                                    </div>
+                                    <div class="icon-box gradient-border">
+                                        <div>
+                                            <img class="skills-icon-image"
+                                                src="Assets/Images/Skills/nodejs-original.svg" alt="" />
+                                        </div>
+                                        <div class="skills-icon-text">NodeJS</div>
+                                    </div>
+                                    <div class="icon-box gradient-border">
+                                        <div>
+                                            <img class="skills-icon-image" src="Assets/Images/Skills/spring.svg"
+                                                alt="" />
+                                        </div>
+                                        <div class="skills-icon-text">Spring</div>
+                                    </div>
+                                    <div class="icon-box gradient-border">
+                                        <div>
+                                            <img class="skills-icon-image" src="Assets/Images/Skills/github.svg"
+                                                alt="" />
+                                        </div>
+                                        <div class="skills-icon-text">Github</div>
+                                    </div>
+                                </div>
+                                <div class="column column-3">
+                                    <div class="icon-box gradient-border">
+                                        <div>
+                                            <img class="skills-icon-image" src="Assets/Images/Skills/android-os.svg"
+                                                alt="" />
+                                        </div>
+                                        <div class="skills-icon-text">Android</div>
+                                    </div>
+                                    <div class="icon-box gradient-border">
+                                        <div>
+                                            <img class="skills-icon-image"
+                                                src="Assets/Images/Skills/mysql-original-wordmark.svg" alt="" />
+                                        </div>
+                                        <div class="skills-icon-text">MySQL</div>
+                                    </div>
+                                    <div class="icon-box gradient-border">
+                                        <div>
+                                            <img class="skills-icon-image" src="Assets/Images/Skills/react.svg"
+                                                alt="" />
+                                        </div>
+                                        <div class="skills-icon-text">React</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div id="projects"></div>
+                <div class="spacer-32"></div>
+                <div class="projects" >
+                    <div class="section-title underline-side">
+                        Projects
+                    </div>
+                    <div class="projects-body">
+                        <div class="project-container">
+                            <div class="project-right-even-mobile">
+                                <div class="project-info">
+                                    <div class="project-title"> // PatientConnect</div>
+                                    <div class="project-description"> 
+                                        A Patient Management System efficiently tracks individual patients and their families, managing visits and medical histories.
+                                        <br><br>
+                                        It features audio input for quick data entry, allowing healthcare providers to streamline documentation. This system enhances patient engagement, ensures continuity of care, organized records for better healthcare delivery.
+                                    </div>
+                                    <div class="project-links">
+                                        <a class="project-link" href="https://drive.google.com/file/d/1DwMPnNVAvdZzRpry5k8Yeb0e6gqPtjJn/view?usp=sharing">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-left-even">
+                                <a href="https://drive.google.com/file/d/1DwMPnNVAvdZzRpry5k8Yeb0e6gqPtjJn/view?usp=sharing">
+                                    <div class="project-image-container">
+                                        <div class="image-background-box"></div>
+                                        <img 
+                                            src="Assets/Images/Projects/PatientsManagementSystem.PNG" 
+                                            alt="" 
+                                            class="project-image" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project-right-even">
+                                <div class="project-info">
+                                    <div class="project-title"> // PatientConnect</div>
+                                    <div class="project-description"> 
+                                        A Patient Management System efficiently tracks individual patients and their families, managing visits and medical histories.
+                                        <br><br>
+                                        It features audio input for quick data entry, allowing healthcare providers to streamline documentation. This system enhances patient engagement, ensures continuity of care, organized records for better healthcare delivery.
+                                    </div>
+                                    <div class="project-links">
+                                        <a class="project-link" href="https://drive.google.com/file/d/1DwMPnNVAvdZzRpry5k8Yeb0e6gqPtjJn/view?usp=sharing">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-body">
+                        <div class="project-container">
+                            <div class="project-left-odd">
+                                <div class="project-info">
+                                    <div class="project-title"> // NEET Exam</div>
+                                    <div class="project-description"> 
+                                        Developed a device-friendly online demo platform for NEET exam preparation, facilitating student registration and live testing in English and Gujarati. 
+                                        <br><br>
+                                        Implemented features include email notifications, test scheduling, and user-friendly interfaces for exam participation. Successfully registered 1,432 students, with a peak of 1,657 unique users. Collaborated with a team to enhance user experience and functionality.
+                                    </div>
+                                    <div class="project-links">
+                                        <a class="project-link" href="https://github.com/Kelta-King/NEET-Exam">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-right-odd">
+                                <a href="https://github.com/Kelta-King/NEET-Exam">
+                                    <div class="project-image-container">
+                                        <div class="image-background-box"></div>
+                                        <img 
+                                            src="Assets/Images/Projects/ExamNEET.png" 
+                                            alt="" 
+                                            class="project-image" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-body">
+                        <div class="project-container">
+                            <div class="project-right-even-mobile">
+                                <div class="project-info">
+                                    <div class="project-title"> // File Browser in Web Browser</div>
+                                    <div class="project-description"> 
+                                        FTP-Browser is a web browser based File manager which manages the files stored in server device.
+                                        <br><br>
+                                        It supports upload, download, rename, delete and create files & folders features using FTP protocol.
+                                    </div>
+                                    <div class="project-links">
+                                        <a class="project-link" href="https://github.com/Kelta-King/FTP-browser">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-left-even">
+                                <a href="https://github.com/Kelta-King/FTP-browser">
+                                    <div class="project-image-container">
+                                        <div class="image-background-box"></div>
+                                        <img 
+                                            src="Assets/Images/Projects/Ftp_browser_fm.PNG" 
+                                            alt="" 
+                                            class="project-image" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project-right-even">
+                                <div class="project-info">
+                                    <div class="project-title"> // File Browser in Web Browser</div>
+                                    <div class="project-description"> 
+                                        FTP-Browser is a web browser based File manager which manages the files stored in server device.
+                                        <br><br>
+                                        It supports upload, download, rename, delete and create files & folders features using FTP protocol.
+                                    </div>
+                                    <div class="project-links">
+                                        <a class="project-link" href="https://github.com/Kelta-King/FTP-browser">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-body">
+                        <div class="project-container">
+                            <div class="project-left-odd">
+                                <div class="project-info">
+                                    <div class="project-title"> // 3D Models in Android</div>
+                                    <div class="project-description"> 
+                                        Developed a repository encompassing research and implementation of techniques for displaying 3D models on Android devices. 
+                                        <br><br>
+                                        This project includes sample code and documentation to facilitate the integration of 3D graphics in mobile applications.
+                                    </div>
+                                    <div class="project-links">
+                                        <a class="project-link" href="https://github.com/Kelta-King/3D-Models-In-Android">
+                                            Learn more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-right-odd">
+                                <a href="https://github.com/Kelta-King/3D-Models-In-Android">
+                                    <div class="project-image-container">
+                                        <div class="image-background-box"></div>
+                                        <img 
+                                            src="Assets/Images/Projects/3D model viewer.jpg" 
+                                            alt="" 
+                                            class="project-image" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact"></div>
+                <div class="spacer-32"></div>
+                <div class="contact">
+                    <div class="section-title underline-side">
+                        Get In Touch
+                    </div>
+                    <div class="spacer-32"></div>
+                    <div>
+                        <a href="https://in.linkedin.com/in/kushang-shah-85a250181" class="contact-social-icon fa fa-linkedin" style="background-color: #007bb5; color:#ffffff"></a>
+                        <a href="https://github.com/Kelta-King" class="contact-social-icon fa fa-github" style="background-color: #000000; color:#ffffff"></a>
+                        <a href="mailto:kushangshah9009@gmail.com" class="contact-social-icon fa fa-envelope-o" style="background-color: #ff6600; color:#ffffff"></a>
+                    </div>
+                    <div style="text-align: center; margin-top: 20px;font-weight: 700; font-size: 18px;">
+                        <p id="contact-form-status"></p>
+                    </div>
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/mzzbpojg" method="POST">
+                        <div class="contact-form-row">
+                            <div class="contact-form-col-20">
+                                <label for="name">Name <span style="color:red;">*</span></label>
+                            </div>
+                            <div class="contact-form-col-80">
+                                <input type="text" class="input-field" id="name" name="name" placeholder="Your name.." required>
+                            </div>
+                        </div>
+                        <div class="contact-form-row">
+                            <div class="contact-form-col-20">
+                                <label for="email">Email <span style="color:red;">*</span></label>
+                            </div>
+                            <div class="contact-form-col-80">
+                                <input type="email" class="input-field" id="email" name="email" placeholder="Your email.." required>
+                            </div>
+                        </div>
+                        <div class="contact-form-row">
+                            <div class="contact-form-col-20">
+                                <label for="message">Message <span style="color:red;">*</span></label>
+                            </div>
+                            <div class="contact-form-col-80">
+                                <textarea id="message" class="input-field" name="message" placeholder="Write your message.."
+                                    style="height:200px" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button class="contact-button" id="contact-sbt-btn">
+                                <p>Send</p>
+                                <svg version="1.1" id="plane" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                                  <path id="paper-plane-icon" d="M462,54.955L355.371,437.187l-135.92-128.842L353.388,167l-179.53,124.074L50,260.973L462,54.955z
+                              M202.992,332.528v124.517l58.738-67.927L202.992,332.528z"></path> 
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="spacer-32"></div>
+            </div>
+            <div class="footer" id="footer">
+                Kushang Shah ©<script>document.write(/\d{4}/.exec(Date())[0])</script>
+            </div>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="Assets/Js/index.js"></script>
+    <!-- <script type="text/javascript" src="Assets/Js/typing.js"></script>
+    <script type="text/javascript" src="Assets/Js/background.js"></script>
+    <script type="text/javascript" src="Assets/Js/header.js"></script>
+    <script type="text/javascript" src="Assets/Js/contact.js"></script> -->
 </body>
+
 </html>
